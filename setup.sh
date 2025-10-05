@@ -99,3 +99,13 @@ sudo gpasswd --add "${USER}" docker
 
 # Install Nix
 curl -fsSL https://install.determinate.systems/nix | sh -s -- install --no-confirm
+
+# Set Git configuration
+git config --global user.name 'Hugo Marotta'
+git config --global user.email 'hgsmtt@proton.me'
+
+git config --global user.signingkey 'hgsmtt@proton.me'
+git config --global commit.gpgsign true
+
+git config --global core.editor 'code --wait'
+git config --global init.defaultBranch 'main'
