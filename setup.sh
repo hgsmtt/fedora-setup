@@ -96,3 +96,6 @@ sudo systemctl enable --now docker
 
 # Enable Docker usage without sudo
 sudo gpasswd --add "${USER}" docker
+
+# Install Nix
+curl -fsSL https://install.determinate.systems/nix | sh -s -- install --no-confirm
